@@ -1,0 +1,10 @@
+import { createConfigForNuxt } from '@nuxt/eslint-config/flat'
+
+export default createConfigForNuxt({
+  // options here
+}).append({
+  rules: {
+    'vue/multi-word-component-names': 'off',
+    'vue/no-multiple-template-root': 'off'
+  }
+})
