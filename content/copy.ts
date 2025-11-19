@@ -29,7 +29,7 @@ export const section4 = {
     'Envia propostas, contratos e boletos em segundos',
     'Aciona o reboque mais próximo no sinistro, de forma automática',
     'Gera relatórios com tempo de resposta, conversão e inadimplência',
-    'Tudo isso integrado ao seu CRM e sistema atual, sem precisar trocar o que já funciona.'
+    'Tudo isso integrado ao seu CRM e sistema atual, sem precisar trocar o que já funciona'
   ]
 }
 

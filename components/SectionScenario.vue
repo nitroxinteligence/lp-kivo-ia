@@ -21,17 +21,20 @@ const cards = [
       <h2 class="text-3xl sm:text-4xl lg:text-5xl tracking-tight font-bold text-highlighted text-pretty text-center leading-[48px]">
         {{ section3.title }}
       </h2>
+      <p class="mt-6 text-base sm:text-lg text-muted text-pretty text-center max-w-3xl mx-auto font-normal">
+        Compare o antes e depois:<br>veja como a IA transforma a eficiência operacional e os resultados da sua empresa.
+      </p>
     </UContainer>
 
-    <div class="mt-8 max-w-7xl mx-auto">
+    <div class="mt-8 max-w-2xl mx-auto">
       <div class="grid grid-cols-1 gap-6">
         <UCard
           v-for="(card, i) in cards"
           :key="i"
           variant="subtle"
           :class="[
-            'group transition-all duration-300 !border',
-            i === 0 ? '!border-red-500 hover:ring-red-900' : '!border-[#9AE600] hover:ring-primary/50'
+            'group transition-all duration-300',
+            i === 0 ? '!ring-[#4A2124] hover:!ring-red-900' : '!ring-[#76ad00] hover:!ring-primary/50'
           ]"
         >
           <div class="flex flex-col gap-6 p-4">

@@ -30,8 +30,8 @@ const cards = [
           :key="i"
           variant="subtle"
           :class="[
-            'group transition-all duration-300 !border',
-            i === 0 ? '!border-red-500 hover:ring-red-900' : '!border-[#9AE600] hover:ring-primary/50'
+            'group transition-all duration-300',
+            i === 0 ? '!ring-[#4A2124] hover:!ring-red-900' : '!ring-[#76ad00] hover:!ring-primary/50'
           ]"
         >
           <div class="flex flex-col gap-6 p-4">
