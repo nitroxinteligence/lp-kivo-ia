@@ -44,7 +44,7 @@ const withGlow = true
         :variant="action.variant"
         color="primary"
         size="lg"
-        class="opacity-0 animate-fade-in-up delay-500"
+        class="opacity-0 animate-fade-in-up delay-500 !text-black"
       >
         {{ action.text }}
       </UButton>

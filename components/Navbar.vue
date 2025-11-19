@@ -45,7 +45,7 @@ const items = computed<NavigationMenuItem[]>(() => [
         color="primary"
         variant="solid"
         size="sm"
-        class="hidden lg:inline-flex"
+        class="hidden lg:inline-flex !text-black"
       >
         Agendar reunião
       </UButton>
@@ -66,6 +66,7 @@ const items = computed<NavigationMenuItem[]>(() => [
           variant="solid"
           size="md"
           block
+          class="!text-black"
         >
           Agendar reunião
         </UButton>

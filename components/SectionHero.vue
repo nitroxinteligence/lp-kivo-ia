@@ -34,7 +34,7 @@ const dashboardImageMobile = 'https://ckwjxuxatlqnuxbfltul.supabase.co/storage/v
             {{ hero.cta }}
           </CustomCTAButton>
           <UButton
-            to="#apresentacao"
+            to="#como-funciona"
             size="xl"
             color="neutral"
             variant="outline"
