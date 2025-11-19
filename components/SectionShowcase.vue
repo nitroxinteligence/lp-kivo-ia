@@ -35,7 +35,15 @@
                 <p class="text-xs text-zinc-400">
                   Planejando a sua IA com menos custos, mais vendas e em maior escala.
                 </p>
-                <button type="button" class="mt-3 md:mt-4 w-full rounded-lg text-white hover:opacity-90 px-4 py-2" style="background-color: #9AE600">Agendar</button>
+                <a
+                  href="https://wa.me/5511991943683?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20KIVO%20IA%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mt-3 md:mt-4 w-full rounded-lg text-white hover:opacity-90 px-4 py-2 inline-block text-center"
+                  style="background-color: #9AE600"
+                >
+                  Agendar
+                </a>
               </div>
             </div>
           </div>

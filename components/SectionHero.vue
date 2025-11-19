@@ -30,7 +30,12 @@ const dashboardImageMobile = 'https://ckwjxuxatlqnuxbfltul.supabase.co/storage/v
 
       <template #links>
         <div class="hero-cta-enter flex flex-wrap gap-x-6 gap-y-3 justify-center">
-          <CustomCTAButton to="#agendar" size="xl">
+          <CustomCTAButton
+            to="https://wa.me/5511991943683?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20KIVO%20IA%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+            size="xl"
+            external
+            target="_blank"
+          >
             {{ hero.cta }}
           </CustomCTAButton>
           <UButton

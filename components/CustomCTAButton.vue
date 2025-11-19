@@ -2,16 +2,20 @@
 interface Props {
   to?: string
   size?: 'sm' | 'md' | 'lg' | 'xl'
+  external?: boolean
+  target?: string
 }
 
-const { to, size } = withDefaults(defineProps<Props>(), {
+const { to, size, external, target } = withDefaults(defineProps<Props>(), {
   to: '#',
-  size: 'xl'
+  size: 'xl',
+  external: false,
+  target: '_self'
 })
 </script>
 
 <template>
-  <NuxtLink :to="to" class="custom-cta-button-wrapper">
+  <NuxtLink :to="to" :external="external" :target="target" class="custom-cta-button-wrapper">
     <button
       :class="[
         'custom-cta-button',

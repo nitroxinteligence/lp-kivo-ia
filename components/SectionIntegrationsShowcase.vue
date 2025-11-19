@@ -1,24 +1,6 @@
 <script setup lang="ts">
 const integrations = [
   {
-    title: 'HubSpot',
-    description: 'CRM completo para vendas e marketing',
-    icon: 'i-lucide-database',
-    link: '#'
-  },
-  {
-    title: 'Bitrix24',
-    description: 'Plataforma de colaboração e CRM',
-    icon: 'i-lucide-layers',
-    link: '#'
-  },
-  {
-    title: 'Salesforce',
-    description: 'Líder mundial em CRM',
-    icon: 'i-lucide-cloud',
-    link: '#'
-  },
-  {
     title: 'WhatsApp Business',
     description: 'API oficial do WhatsApp',
     icon: 'i-lucide-message-circle',
