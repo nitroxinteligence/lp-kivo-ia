@@ -27,7 +27,7 @@ const items = computed<NavigationMenuItem[]>(() => [
   <UHeader
     title="Kivo IA"
     to="/"
-    class="!bg-transparent !backdrop-blur-xl !fixed !top-0 !left-0 !right-0 !z-50"
+    class="hero-nav-enter !bg-transparent !backdrop-blur-xl !fixed !top-0 !left-0 !right-0 !z-50"
   >
     <template #title>
       <span class="text-xl font-bold text-highlighted">Kivo IA</span>

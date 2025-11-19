@@ -19,48 +19,6 @@ const stats = [
   }
 ]
 
-const sectionRef = ref<HTMLElement | null>(null)
-const isVisible = ref(false)
-const counts = ref([0, 0, 0])
-
-const animateCount = (index: number, target: number) => {
-  const duration = 2000 // 2 seconds
-  const steps = 60
-  const increment = target / steps
-  const stepDuration = duration / steps
-
-  let current = 0
-  const timer = setInterval(() => {
-    current += increment
-    if (current >= target) {
-      counts.value[index] = target
-      clearInterval(timer)
-    } else {
-      counts.value[index] = Math.floor(current)
-    }
-  }, stepDuration)
-}
-
-onMounted(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && !isVisible.value) {
-          isVisible.value = true
-          stats.forEach((stat, index) => {
-            animateCount(index, stat.value)
-          })
-          observer.disconnect()
-        }
-      })
-    },
-    { threshold: 0.3 }
-  )
-
-  if (sectionRef.value) {
-    observer.observe(sectionRef.value)
-  }
-})
 </script>
 
 <template>
@@ -70,7 +28,7 @@ onMounted(() => {
       <p class="mt-6 text-base sm:text-lg text-muted text-pretty text-center max-w-3xl mx-auto font-normal">{{ section5.subtitle }}</p>
     </UContainer>
 
-    <div ref="sectionRef" class="mt-8 max-w-7xl mx-auto">
+    <div class="mt-8 max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <UCard
           v-for="(stat, i) in stats"
@@ -86,7 +44,7 @@ onMounted(() => {
             </div>
             <div class="space-y-2">
               <div class="text-5xl sm:text-6xl font-bold text-primary">
-                {{ counts[i] }}%
+                {{ stat.value }}%
               </div>
               <p class="text-sm sm:text-base text-default font-medium leading-relaxed">
                 {{ stat.description }}

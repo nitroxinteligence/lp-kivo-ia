@@ -14,12 +14,22 @@ const dashboardImageMobile = 'https://ckwjxuxatlqnuxbfltul.supabase.co/storage/v
     <!-- Conteúdo da hero section -->
     <UPageHero
       id="hero"
-      :title="hero.title"
-      :description="hero.subtitle"
       class="relative z-10"
     >
+      <template #title>
+        <h1 class="hero-title-enter text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
+          {{ hero.title }}
+        </h1>
+      </template>
+
+      <template #description>
+        <p class="hero-description-enter text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
+          {{ hero.subtitle }}
+        </p>
+      </template>
+
       <template #links>
-        <div class="flex flex-wrap gap-x-6 gap-y-3 justify-center">
+        <div class="hero-cta-enter flex flex-wrap gap-x-6 gap-y-3 justify-center">
           <CustomCTAButton to="#agendar" size="xl">
             {{ hero.cta }}
           </CustomCTAButton>
@@ -35,7 +45,7 @@ const dashboardImageMobile = 'https://ckwjxuxatlqnuxbfltul.supabase.co/storage/v
       </template>
 
       <!-- Container com imagem do dashboard - Mobile -->
-      <div class="relative border border-[#27272A] rounded-lg overflow-hidden mt-0 block md:hidden">
+      <div class="hero-image-enter relative border border-[#27272A] rounded-lg overflow-hidden mt-0 block md:hidden">
         <img
           :src="dashboardImageMobile"
           alt="Dashboard Kivo IA Mobile"
@@ -46,7 +56,7 @@ const dashboardImageMobile = 'https://ckwjxuxatlqnuxbfltul.supabase.co/storage/v
       </div>
 
       <!-- Container com imagem do dashboard - Desktop -->
-      <div class="relative border border-[#27272A] rounded-lg overflow-hidden mt-0 hidden md:block">
+      <div class="hero-image-enter relative border border-[#27272A] rounded-lg overflow-hidden mt-0 hidden md:block">
         <img
           :src="dashboardImage"
           alt="Dashboard Kivo IA"
