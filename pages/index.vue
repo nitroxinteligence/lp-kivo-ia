@@ -8,7 +8,8 @@ import SectionReasons from '~/components/SectionReasons.vue'
 import SectionSavings from '~/components/SectionSavings.vue'
 import SectionIntegrationsShowcase from '~/components/SectionIntegrationsShowcase.vue'
 import SectionScrollReveal from '~/components/SectionScrollReveal.vue'
-import SectionScrollAnimation from '~/components/SectionScrollAnimation.vue'
+import SectionScrollAnimationMobile from '~/components/SectionScrollAnimationMobile.vue'
+import SectionScrollAnimationDesktop from '~/components/SectionScrollAnimationDesktop.vue'
 import SectionCTA from '~/components/SectionCTA.vue'
 import Footer from '~/components/Footer.vue'
 </script>
@@ -23,7 +24,11 @@ import Footer from '~/components/Footer.vue'
   <SectionSavings />
   <SectionIntegrationsShowcase />
   <SectionScrollReveal />
-  <SectionScrollAnimation />
+
+  <!-- SEPARADOS: Mobile e Desktop -->
+  <SectionScrollAnimationMobile />
+  <SectionScrollAnimationDesktop />
+
   <SectionCTA />
   <Footer />
 </template>
